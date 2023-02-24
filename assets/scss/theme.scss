@@ -350,6 +350,124 @@ input {
         box-shadow: none !important;
     }
 }
+.form-select {
+    border-color: $gray-300 !important;
+    box-shadow: none;
+    &:focus {
+        box-shadow: none !important;
+        outline: none;
+    }
+}
+.imgPopularProductsSlider {
+    & .slick-list {
+        height: 100%;
+        & .slick-track {
+            height: 100%;
+            & .item  {
+                & .card  {
+                    & .card-body {
+                        min-height: 385px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.imgPopularProductsSlider2 {
+    & .slick-list {
+        height: 100%;
+        & .slick-track {
+            height: 100%;
+            & .item  {
+                & .card  {
+                    & .card-body {
+                        display: flex;
+                        flex-direction: column;
+                        min-height: 410px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1199.99px) {
+    .imgPopularProductsSlider {
+        & .slick-list {
+            & .slick-track {
+                & .item  {
+                    & .card  {
+                        & .card-body {
+                            min-height: 350px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .imgPopularProductsSlider2 {
+        & .slick-list {
+            & .slick-track {
+                & .item  {
+                    & .card  {
+                        & .card-body {
+                            display: flex;
+                            flex-direction: column;
+                            min-height: 385px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:767.99px) {
+    .imgPopularProductsSlider {
+        & .slick-list {
+            & .slick-track {
+                & .item  {
+                    & .card  {
+                        & .card-body {
+                            min-height: 374px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .imgPopularProductsSlider2 {
+        & .slick-list {
+            & .slick-track {
+                & .item  {
+                    & .card  {
+                        & .card-body {
+                            display: flex;
+                            flex-direction: column;
+                            min-height: 410px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:575.99px) {
+    header {
+        & .cusLogo {
+            width: auto;
+            height: 19px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
 .text-primary {
     --fc-text-opacity: 1;
     color: rgba($primary,var(--fc-text-opacity))!important
@@ -15970,73 +16088,73 @@ textarea.form-control-lg {
 //     --fc-btn-disabled-border-color: #{$purple};
 // }
 
-// .btn-outline-primary {
-//     --fc-btn-color: #{$primary};
-//     --fc-btn-border-color: #{$primary};
-//     --fc-btn-hover-color: #{$white};
-//     --fc-btn-hover-bg: #{$primary};
-//     --fc-btn-hover-border-color: #{$primary};
-//     --fc-btn-focus-shadow-rgb: #{$primary};
-//     --fc-btn-active-color: #{$white};
-//     --fc-btn-active-bg: #{$primary};
-//     --fc-btn-active-border-color: #{$primary};
-//     --fc-btn-active-shadow: inset 0 3px 5px #{rgba($black,.125)};
-//     --fc-btn-disabled-color: #{$primary};
-//     --fc-btn-disabled-bg: transparent;
-//     --fc-btn-disabled-border-color: #{$primary};
-//     --fc-gradient: none;
-// }
+.btn-outline-primary {
+    --fc-btn-color: #{$primary};
+    --fc-btn-border-color: #{$primary};
+    --fc-btn-hover-color: #{$white};
+    --fc-btn-hover-bg: #{$primary};
+    --fc-btn-hover-border-color: #{$primary};
+    --fc-btn-focus-shadow-rgb: #{$primary};
+    --fc-btn-active-color: #{$white};
+    --fc-btn-active-bg: #{$primary};
+    --fc-btn-active-border-color: #{$primary};
+    --fc-btn-active-shadow: inset 0 3px 5px #{rgba($black,.125)};
+    --fc-btn-disabled-color: #{$primary};
+    --fc-btn-disabled-bg: transparent;
+    --fc-btn-disabled-border-color: #{$primary};
+    --fc-gradient: none;
+}
 
-// .btn-outline-secondary {
-//     --fc-btn-color: #{$secondary};
-//     --fc-btn-border-color: #{$secondary};
-//     --fc-btn-hover-color: #{$white};
-//     --fc-btn-hover-bg: #{$secondary};
-//     --fc-btn-hover-border-color: #{$secondary};
-//     --fc-btn-focus-shadow-rgb: #{$secondary};
-//     --fc-btn-active-color: #{$white};
-//     --fc-btn-active-bg: #{$secondary};
-//     --fc-btn-active-border-color: #{$secondary};
-//     --fc-btn-active-shadow: inset 0 3px 5px #{rgba($black,.125)};
-//     --fc-btn-disabled-color: #{$secondary};
-//     --fc-btn-disabled-bg: transparent;
-//     --fc-btn-disabled-border-color: #{$secondary};
-//     --fc-gradient: none
-// }
+.btn-outline-secondary {
+    --fc-btn-color: #{$secondary};
+    --fc-btn-border-color: #{$secondary};
+    --fc-btn-hover-color: #{$white};
+    --fc-btn-hover-bg: #{$secondary};
+    --fc-btn-hover-border-color: #{$secondary};
+    --fc-btn-focus-shadow-rgb: #{$secondary};
+    --fc-btn-active-color: #{$white};
+    --fc-btn-active-bg: #{$secondary};
+    --fc-btn-active-border-color: #{$secondary};
+    --fc-btn-active-shadow: inset 0 3px 5px #{rgba($black,.125)};
+    --fc-btn-disabled-color: #{$secondary};
+    --fc-btn-disabled-bg: transparent;
+    --fc-btn-disabled-border-color: #{$secondary};
+    --fc-gradient: none
+}
 
-// .btn-outline-success {
-//     --fc-btn-color: #{$success};
-//     --fc-btn-border-color: #{$success};
-//     --fc-btn-hover-color: #{$white};
-//     --fc-btn-hover-bg: #{$success};
-//     --fc-btn-hover-border-color: #{$success};
-//     --fc-btn-focus-shadow-rgb: #{$success};
-//     --fc-btn-active-color: #{$white};
-//     --fc-btn-active-bg: #{$success};
-//     --fc-btn-active-border-color: #{$success};
-//     --fc-btn-active-shadow: inset 0 3px 5px #{rgba($black,.125)};
-//     --fc-btn-disabled-color: #{$success};
-//     --fc-btn-disabled-bg: transparent;
-//     --fc-btn-disabled-border-color: #{$success};
-//     --fc-gradient: none
-// }
+.btn-outline-success {
+    --fc-btn-color: #{$success};
+    --fc-btn-border-color: #{$success};
+    --fc-btn-hover-color: #{$white};
+    --fc-btn-hover-bg: #{$success};
+    --fc-btn-hover-border-color: #{$success};
+    --fc-btn-focus-shadow-rgb: #{$success};
+    --fc-btn-active-color: #{$white};
+    --fc-btn-active-bg: #{$success};
+    --fc-btn-active-border-color: #{$success};
+    --fc-btn-active-shadow: inset 0 3px 5px #{rgba($black,.125)};
+    --fc-btn-disabled-color: #{$success};
+    --fc-btn-disabled-bg: transparent;
+    --fc-btn-disabled-border-color: #{$success};
+    --fc-gradient: none
+}
 
-// .btn-outline-info {
-//     --fc-btn-color: #{$info};
-//     --fc-btn-border-color: #{$info};
-//     --fc-btn-hover-color: #{$white};
-//     --fc-btn-hover-bg: #{$info};
-//     --fc-btn-hover-border-color: #{$info};
-//     --fc-btn-focus-shadow-rgb: #{$info};
-//     --fc-btn-active-color: #{$white};
-//     --fc-btn-active-bg: #{$info};
-//     --fc-btn-active-border-color: #{$info};
-//     --fc-btn-active-shadow: inset 0 3px 5px #{rgba($black,.125)};
-//     --fc-btn-disabled-color: #{$info};
-//     --fc-btn-disabled-bg: transparent;
-//     --fc-btn-disabled-border-color: #{$info};
-//     --fc-gradient: none
-// }
+.btn-outline-info {
+    --fc-btn-color: #{$info};
+    --fc-btn-border-color: #{$info};
+    --fc-btn-hover-color: #{$white};
+    --fc-btn-hover-bg: #{$info};
+    --fc-btn-hover-border-color: #{$info};
+    --fc-btn-focus-shadow-rgb: #{$info};
+    --fc-btn-active-color: #{$white};
+    --fc-btn-active-bg: #{$info};
+    --fc-btn-active-border-color: #{$info};
+    --fc-btn-active-shadow: inset 0 3px 5px #{rgba($black,.125)};
+    --fc-btn-disabled-color: #{$info};
+    --fc-btn-disabled-bg: transparent;
+    --fc-btn-disabled-border-color: #{$info};
+    --fc-gradient: none
+}
 
 .btn-outline-warning {
     --fc-btn-color: #{$warning};
